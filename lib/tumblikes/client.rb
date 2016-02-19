@@ -24,7 +24,7 @@ module Tumblikes
 
       request_num = ([liked_count - offset, limit].min / MAX_LIMIT_NUM).ceil
 
-      image_chunks = (offset..request_num).map do |req_num|
+      image_chunks = (0..request_num).map do |req_num|
         liked_posts = @client.likes(limit: MAX_LIMIT_NUM, offset: offset + req_num * MAX_LIMIT_NUM).dig('liked_posts')
         photos = liked_posts.map { |post| post.dig('photos') }.flatten.compact
 

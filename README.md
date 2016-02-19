@@ -36,8 +36,17 @@ tumblikes = Tumblikes::Client.new(
 ```
 
 ### Quick Example
+
 ```ruby
-tumblikes.image_urls(limit: 5)
+tumblikes.image_urls
+```
+
+You can use fllowing options.
+* limit
+* offset
+
+```ruby
+tumblikes.image_urls(limit: 5, offset: 100)
 # => ["https://xx.media.tumblr.com/xxxxxxxx/tumblr_xxxxx.jpg",
 #  "https://xx.media.tumblr.com/xxxxxxxx/tumblr_xxxxx.jpg",
 #  "https://xx.media.tumblr.com/xxxxxxxx/tumblr_xxxxx.jpg",
