@@ -43,7 +43,7 @@ tumblikes = Tumblikes::Client.new(
 tumblikes.image_urls
 ```
 
-You can use fllowing options.
+You can use following options.
 * limit
 * offset
 
