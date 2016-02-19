@@ -2,6 +2,8 @@
 
 This is simple library for collecting your Tumblr likes.
 
+[![Gem Version](https://badge.fury.io/rb/tumblikes.svg)](https://badge.fury.io/rb/tumblikes)
+
 ## Installation
 
 Add this line to your application's Gemfile:

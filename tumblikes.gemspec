@@ -10,13 +10,14 @@ Gem::Specification.new do |spec|
   spec.email         = ["z.dogma.asaki@gmail.com"]
 
   spec.summary       = %q{simple library for tumblr likes}
-  spec.description   = %q{You can collect likes image urls.}
+  spec.description   = %q{You can collect "Likes" image urls.}
   spec.homepage      = "https://github.com/zdogma/tumblikes"
   spec.license       = "MIT"
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+  spec.required_ruby_version = '>= 2.3.0'
 
   spec.add_dependency "tumblr_client", "~> 0.8.5"
 
