@@ -6,11 +6,11 @@ require 'tumblikes/version'
 Gem::Specification.new do |spec|
   spec.name          = "tumblikes"
   spec.version       = Tumblikes::VERSION
-  spec.authors       = ["zdomga"]
+  spec.authors       = ["zdogma"]
   spec.email         = ["z.dogma.asaki@gmail.com"]
 
-  spec.summary       = %q{simple library for tumblr likes}
-  spec.description   = %q{You can collect "Likes" image urls.}
+  spec.summary       = %q{This is simple library for Tumblr "Likes".}
+  spec.description   = %q{You can easily get "Likes" image urls.}
   spec.homepage      = "https://github.com/zdogma/tumblikes"
   spec.license       = "MIT"
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
