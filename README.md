@@ -38,9 +38,21 @@ tumblikes = Tumblikes::Client.new(
 ```
 
 ### Quick Example
+#### Liked Count
+```ruby
+tumblikes.liked_count
+# => 5729
+```
 
+#### Image Urls
 ```ruby
 tumblikes.image_urls
+# => [
+#  "https://xx.media.tumblr.com/xxx/tumblr_1.jpg",
+#  "https://xx.media.tumblr.com/xxx/tumblr_2.jpg",
+#  "https://xx.media.tumblr.com/xxx/tumblr_3.jpg",
+#  ...
+#  ]
 ```
 
 You can use following options.
@@ -49,11 +61,13 @@ You can use following options.
 
 ```ruby
 tumblikes.image_urls(limit: 5, offset: 100)
-# => ["https://xx.media.tumblr.com/xxxxxxxx/tumblr_xxxxx.jpg",
-#  "https://xx.media.tumblr.com/xxxxxxxx/tumblr_xxxxx.jpg",
-#  "https://xx.media.tumblr.com/xxxxxxxx/tumblr_xxxxx.jpg",
-#  "https://xx.media.tumblr.com/xxxxxxxx/tumblr_xxxxx.jpg",
-#  "https://xx.media.tumblr.com/xxxxxxxx/tumblr_xxxxx.jpg"]
+# => [
+#  "https://xx.media.tumblr.com/xxx/tumblr_100.jpg",
+#  "https://xx.media.tumblr.com/xxx/tumblr_101.jpg",
+#  "https://xx.media.tumblr.com/xxx/tumblr_102.jpg",
+#  "https://xx.media.tumblr.com/xxx/tumblr_103.jpg",
+#  "https://xx.media.tumblr.com/xxx/tumblr_104.jpg"
+#  ]
 ```
 
 ## Contributing
